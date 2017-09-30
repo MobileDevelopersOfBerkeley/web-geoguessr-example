@@ -4,7 +4,7 @@ angular.module('app.controllers.game', [])
       // Used for asynchronous updates
       Items.getRandomItem(function(item) {
         $scope.$evalAsync(function() {
-          $scope.item = item;
+          // TODO: upate item
         });
       });
     };
@@ -12,7 +12,6 @@ angular.module('app.controllers.game', [])
     $scope.getRandomItemAsynch();
 
     $scope.guessPrice = function (guess) {
-      console.log(guess)
       guess = parseFloat(guess);
       if (isNaN(guess)) {
         alert("Invalid guess entered");
