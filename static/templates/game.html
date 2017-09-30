@@ -1,0 +1,7 @@
+<div ng-controller="GameCtrl">
+  <img ng-src="{{ item.url }}" />
+  <br>
+  <input type="text" ng-model="guess"></input>
+  <button ng-click="guessPrice(guess)">Guess</button>
+  <button ng-click="getRandomItemAsynch()">New item</button>
+</div>
